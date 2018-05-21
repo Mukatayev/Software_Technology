@@ -1,0 +1,49 @@
+﻿body {
+    padding-top: 55px;
+}
+
+
+
+.container-fluid {
+
+position: fixed;
+
+}
+
+
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.panel {
+    width: 100%;
+    height: 100px;
+}
+
+.form-inline {
+    margin: 10px;
+}
+
+select {
+    width: 180px !important;
+}
+
+@media(max-width: 767px) {
+    select {
+        width: 100% !important;
+    }
+    
+    input[type="button"] {
+        width: 100% !important;
+    }
+}
+
+.success-msg {
+    position: fixed;
+    z-index: 9;
+    margin-top: 13px;
+    margin-left: 9px;
+    display: none;
+}

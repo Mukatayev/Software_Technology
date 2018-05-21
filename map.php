@@ -52,9 +52,10 @@ $result1 = mysql_query($query) or die(mysql_error()."[".$query."]");
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      --AIzaSyAu8PGryDoIrZkodd2vAyyxP4IiD7OWNlM
     <![endif]-->
 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu8PGryDoIrZkodd2vAyyxP4IiD7OWNlM&libraries=places"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=&libraries=places"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <style type="text/css">
@@ -344,7 +345,7 @@ $('#ddlDestination').append(seloptiond);
             destination: $('#ddlDestination').val(),
             travelMode: google.maps.TravelMode[$('#ddlTravelMode').val()],
             waypoints: wayPoints,
-            optimizeWaypoints: $('#chkOptimizePath').is(':checked')
+           // optimizeWaypoints: $('#chkOptimizePath').is(':checked')
         };
         directionsService.route(directionsRequest, function(response, status) {
             if (status == google.maps.DirectionsStatus.OK) {
@@ -796,6 +797,12 @@ google.maps.event.addDomListener(window, "load", initializeMap);
                     <div class="form-group">
                             <input id="btnDisplayDirections" type="button" value="Display" class="btn btn-primary" />
                         </div>
+
+                        
+                         <div class="form-group">
+                            <input id="getadd" type="button" value="Get Addresses" class="btn btn-info" />
+                        </div>  
+                         
 
 
                      
